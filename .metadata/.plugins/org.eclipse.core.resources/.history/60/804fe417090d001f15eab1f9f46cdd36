@@ -1,0 +1,18 @@
+package com.sukla.threads;
+
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+public class WordCount2
+{
+	public static void main(String[] args)
+	{
+		String s = "hello";
+		Map<Character, Long> collect2 = s.chars()
+		.mapToObj(c->(char)c)
+		.filter(Character::isLetter)
+		.collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+	}
+
+}

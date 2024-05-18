@@ -1,0 +1,6 @@
+package com.sukla.threadpool;
+
+public class TriggerEmailForPolicy implements Runnable
+{
+
+}

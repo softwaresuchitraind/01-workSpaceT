@@ -1,0 +1,27 @@
+package com.sukla.threadpool;
+
+public class TriggerEmailForPolicy implements Runnable
+{
+	private Customer c;
+	public TriggerEmailForPolicy(Customer c)
+	{
+		this.c =c;
+	}
+	@Override
+	public void run()
+	{
+		// TODO Auto-generated method stub
+		
+	}
+	
+	private static void triggerEmail(Customer c)
+	{
+		System.out.println("Sending Email to Person");
+		StringBuffer s = new StringBuffer();
+		s.append("Hi" +c.customerName);
+		s.append("for policy Number" +c.policyNumber+"Premium is due and premium amount is"+c.premium);
+		s.append("Please pay before the due date to avoid late Charges");
+		
+	}
+
+}

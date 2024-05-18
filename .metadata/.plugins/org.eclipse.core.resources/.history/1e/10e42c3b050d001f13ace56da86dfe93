@@ -1,0 +1,12 @@
+package com.sukla.threads;
+
+public class M2
+{
+	public static void main(String[] args)
+	{
+		String s1= "hello";
+		Map<String,Long> map1=
+
+				s1.char().map(s->s.char()).collect(Function.identity(),Collectors.counting());
+	}
+}

@@ -1,0 +1,13 @@
+package com.sukla.threadpool;
+
+public class TriggerEmailForPolicy implements Runnable
+{
+
+	@Override
+	public void run()
+	{
+		// TODO Auto-generated method stub
+		
+	}
+
+}

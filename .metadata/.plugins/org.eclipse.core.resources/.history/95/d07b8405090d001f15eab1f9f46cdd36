@@ -1,0 +1,10 @@
+package com.sukla.threads;
+
+public class WordCount2
+{
+	public static void main(String[] args)
+	{
+		
+	}
+
+}

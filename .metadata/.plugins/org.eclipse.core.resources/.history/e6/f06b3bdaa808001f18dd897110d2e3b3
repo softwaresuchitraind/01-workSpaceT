@@ -1,0 +1,52 @@
+package com.sukla.threadpool;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class MultithreadingForInsurance
+{
+	public static void main(String[] args)
+	{
+		//SELECT * FROM POLICY
+		Customer customer= new Customer("Suchitra", "PL1234", 1500.0);
+		Customer customer1= new Customer("Suchitr", "PL12834", 15800.0);
+		Customer customer2= new Customer("Suchit", "PL18234", 5080.0);
+		Customer customer3= new Customer("Suchi", "PL18234", 15080.0);
+		Customer customer4= new Customer("Such", "PL12834", 15080.0);
+		Customer customer5= new Customer("uchitra", "PL18234", 15900.0);
+		Customer customer6= new Customer("Schitra", "PL18234", 15090.0);
+		Customer customer7= new Customer("S-uchitra", "P8L1234", 15900.0);
+		Customer customer8= new Customer("Suhitra", "PL18234", 91500.0);
+		
+		
+		List<Customer> customerList = new ArrayList<>();
+		customerList.add(customer1);
+		customerList.add(customer2);
+		customerList.add(customer3);
+		customerList.add(customer4);
+		customerList.add(customer5);
+		customerList.add(customer6);
+		customerList.add(customer7);
+		customerList.add(customer8);
+	
+		
+		ExecutorService ex = Executors.newFixedThreadPool(3);
+		for (int i = 0; i < customerList.size(); i++)
+		{
+			
+		}
+		/*
+		 * for (int i = 0; i < customerList.size(); i++) { triggerEmail(); }
+		 */
+		
+	}
+
+	private static void triggerEmail()
+	{
+		
+		
+	}
+}

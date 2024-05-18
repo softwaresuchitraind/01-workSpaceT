@@ -1,0 +1,23 @@
+package com.sukla.threadpool;
+
+public class TriggerEmailForPolicy implements Runnable
+{
+	private Customer c;
+	public TriggerEmailForPolicy(Customer c)
+	{
+		this.c =c;
+	}
+	@Override
+	public void run()
+	{
+		// TODO Auto-generated method stub
+		
+	}
+	
+	private static void triggerEmail()
+	{
+		System.out.println("Sending Email to Person");
+		
+	}
+
+}
